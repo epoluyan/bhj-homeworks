@@ -1,9 +1,8 @@
-let modalWinodwDanger = document.querySelector('#modal_main');
+let modalWinodwDanger = document.getElementById('modal_main');
 modalWinodwDanger.classList.add('modal_active')
 
 const closeButton = Array.from(document.querySelectorAll('.modal__close'));
 closeButton.forEach((e) => {
-    console.log('1',e);
     e.onclick = () => {
         e.closest('.modal').classList = 'modal';
     }
